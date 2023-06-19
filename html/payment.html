@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../css/payment.css">
+  <link rel="icon" type="image/icon" href="../images/logo.jpg.png">
+
+  <!--
+    - google font link
+  -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Source+Sans+3:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <!--
+    - main container
+  -->
+
+  <main class="container">
+
+    <h1 class="heading">
+      <ion-icon name="cart-outline"></ion-icon> Shopping Cart
+    </h1>
+
+    <div class="item-flex">
+
+      <!--
+       - checkout section
+      -->
+      <section class="checkout">
+
+        <h2 class="section-heading">Payment Details</h2>
+
+        <div class="payment-form">
+
+          <div class="payment-method">
+
+            <button class="method selected">
+              <ion-icon name="card"></ion-icon>
+
+              <span>Credit Card</span>
+
+              <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+            </button>
+
+            <button class="method">
+              <ion-icon name="logo-paypal"></ion-icon>
+
+              <span>Cash On Delivery</span>
+
+              <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <form action="#">
+
+            <div class="cardholder-name">
+              <label for="cardholder-name" class="label-default">Cardholder name</label>
+              <input type="text" name="cardholder-name" id="cardholder-name" class="input-default">
+            </div>
+
+            <div class="card-number">
+              <label for="card-number" class="label-default">Card number</label>
+              <input type="number" name="card-number" id="card-number" class="input-default">
+            </div>
+
+            <div class="input-flex">
+
+              <div class="expire-date">
+                <label for="expire-date" class="label-default">Expiration date</label>
+
+                <div class="input-flex">
+
+                  <input type="number" name="day" id="expire-date" placeholder="31" min="1" max="31"
+                    class="input-default">
+                  /
+                  <input type="number" name="month" id="expire-date" placeholder="12" min="1" max="12"
+                    class="input-default">
+
+                </div>
+              </div>
+
+              <div class="cvv">
+                <label for="cvv" class="label-default">CVV</label>
+                <input type="number" name="cvv" id="cvv" class="input-default">
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+        <button class="btn btn-primary">
+          <b>Pay</b>Rs.<span id="payAmount">2.15</span>
+        </button><br><br>
+        <button class="find-state" style="background-color: green; border-radius: 10px; padding: 10px;"><b>LET US KNOW THE STATE FOR DELIVERING THE PRODUCTS</b></button>
+        <h1 class="status"></h1>
+        <center><button style="color: green;font-style: bold;margin-top: 50px;text-decoration: underline;"><a href ="product.html"> BACK TO PRODUCT PAGE</a></button></center>
+
+      </section>
+
+      <!--
+        - cart section
+      -->
+      <section class="cart">
+
+        <div class="cart-item-box">
+
+          <h2 class="section-heading">Order Summary</h2>
+
+          <div class="product-card">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="../images/tomato.jpg" alt="Green tomatoes" width="80px" class="product-img">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">Tomatoes 1 Kilo</h4>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    Rs.<span id="price">25.50</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="../images/apple.jpeg" alt="Cabbage" width="80px" class="product-img">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">Apple 1pc</h4>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    Rs. <span id="price">18.00</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="wrapper">
+
+          <div class="discount-token">
+
+            <label for="discount-token" class="label-default">Gift card/Discount code</label>
+
+            <div class="wrapper-flex">
+
+              <input type="text" name="discount-token" id="discount-token" class="input-default">
+
+              <button class="btn btn-outline">Apply</button>
+
+            </div>
+
+          </div>
+
+          <div class="amount">
+
+            <div class="subtotal">
+              <span>Subtotal</span> <span>Rs. <span id="subtotal">2.05</span></span>
+            </div>
+
+            <div class="tax">
+              <span>Tax</span> <span>Rs.<span id="tax">0.10</span></span>
+            </div>
+
+            <div class="shipping">
+              <span>Shipping</span> <span>Rs.<span id="shipping">0.00</span></span>
+            </div>
+
+            <div class="total">
+              <span>Total</span> <span>Rs.<span id="total">2.15</span></span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="payment.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>const findMystate = () => {
+
+    const status = document.querySelector('.status');
+
+
+    const success = (position) =>{
+        console.log(position)
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        const geoApiurl = 'https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en'
+
+        fetch(geoApiurl)
+        .then(res => res.json())
+        .then(data => {
+            status.textContent = data.principalSubdivision
+    
+        })
+
+    }
+
+    const error = () =>{
+        status.textContent = 'unable to retrieve your loction' ;
+    }
+
+    navigator.geolocation.getCurrentPosition(success, error);  
+}  
+
+document.querySelector('.find-state').addEventListener('click',findMystate);</script>
+
+</body>
+
+</html>

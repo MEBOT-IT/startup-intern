@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+.row{
+    position: fixed;
+}
+
+.container img {
+
+    background-position:center;
+    background-size:cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+ 
+  }
+  
+  .container {
+    padding: 110px;
+}
+
+
+  ::placeholder {
+
+      color: #ffffff;
+      opacity: 1;
+      font-size:18px;
+  }
+  .newclientform{
+    width: 600px;
+    height: 400px;
+      margin-left:300px;
+      background-color: rgba(0,0,0,0.55);
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 15px;
+      border-color:#d2d2d2;
+      border-width: 5px;
+      color:white;
+      box-shadow:0 1px 0 #cfcfcf;
+      font-size: 23px;
+      position: fixed;
+      top: 120px;
+  }
+
+  h1{
+      color:white;
+      
+  }
+  label{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+  }
+  .fields{
+      border-radius: 10px;
+      position: fixed;
+      
+  }
+  .newclient{
+      color: white;
+      font-family: 'Quicksand', sans-serif;
+      text-shadow: #A9FA8D 1px 1px 2px;
+  }
+  .buttons{
+    text-align: center;   
+    position: fixed;
+}
+
+.submit,.cancel{
+    margin-top: 70px;
+    border-radius: 15px;
+    font-size:17px;
+    background-color:#A9FA8D;
+    height: 30px;
+    width: 95px;
+    border-color:#79F74D;
+}
+
+.fields{
+    height: 28px;
+    width: 250px;
+    background-color:#E7EAE6;
+    
+}
+.logo1{
+    height: 250px;
+    width: 250px;
+    margin-left: 450px;
+    margin-top:-69px ;
+    position: absolute;
+    z-index: 1;
+    -webkit-text-stroke: 1px #265016;
+    -webkit-text-fill-color: #A9FA8D;
+    font-size: 61px;
+
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/**{
+    background-color: #f2f7f2;
+    margin:0%;
+}*/
+
+
+html{
+   font-size: 90%;
+   overflow-x: hidden;
+}
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   /* padding-bottom: 5rem; */
+}
+
+section{
+   padding:2rem;
+}
+
+
+body{
+    background-color: #f2f7f2;
+}
+center{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    color: green;
+    font-size: larger;
+
+}
+
+table{
+    margin-top: 30px;
+}
+.btn{
+    background-color: green;
+    color: white;
+    box-shadow: darkgreen 1px 1px 3px;
+    border: none;
+}
+.btn:hover{
+    background-color: #74b72e;
+    
+
+}
+a.btn-danger {
+    background-color: #71a92d;
+  }
+
+tr:nth-child(even){
+    background-color:#d9e8d8;
+    color: bold black;
+}
+tr:nth-child(odd){
+    background-color: #bad6b8;
+}
+#heading{
+    background-color:whitesmoke;
+    border: 1px solid grey;
+}
+.header{
+    background-color: green;
+    position: sticky;
+    font-size:62.5%;
+    top:0; left:0;
+    z-index: 1000;
+ }
+ 
+ .header .flex{
+    display: flex;
+    align-items: center;
+    padding:1.5rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .header .flex .logo{
+    margin-right: auto;
+    font-size: 2.5rem;
+    color:white;
+ }
+ 
+ .header .flex .navbar a{
+    margin-left: 2rem;
+    font-size: 2rem;
+    color:white;
+ }
+ .header .flex .navbar a
+ {
+    text-decoration: none;
+ }
+ .header .flex a 
+ {
+    text-decoration: none;
+ }
+ 
+ .header .flex .navbar a:hover{
+    color:yellow;
+ }
+ 
+ .header .flex .user{
+     margin-left: 2rem;
+     font-size: 2rem;
+     color:var(--white);
+  }
+  
+ 
+ #menu-btn{
+    margin-left: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color:var(--white);
+    display: none;
+ }
+<!--
